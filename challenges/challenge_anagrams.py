@@ -25,12 +25,13 @@ def divide_array(array, low, high):
     return index + 1
 
 
-def check_anagram(first_string, second_string):
+def is_anagram(first_string, second_string):
     if first_string == "" and second_string == "":
         return "", "", False
 
     first_string = list(first_string.lower())
     second_string = list(second_string.lower())
+
     sort(first_string, 0, len(first_string) - 1)
     sort(second_string, 0, len(second_string) - 1)
     first_string = ''.join(first_string)
